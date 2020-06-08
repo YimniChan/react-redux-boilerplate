@@ -1,6 +1,5 @@
 /* global window, document */
 /* eslint no-render-return-value: 0, jsx-filename-extension: 0 */
-
 // index.js
 import React from 'react';
 import ReactDOM from 'react-dom';

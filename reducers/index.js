@@ -9,11 +9,11 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     // case INCREMENT:
     //   return state + 1;
+    // case INCREMENT5:
+    // return state + 5;
     case INCREMENT:
       console.log(action.value);
       return state + action.value;
-    // case INCREMENT5:
-    // return state + 5;
     case DECREMENT:
       return state - 1;
     case CLEAR:

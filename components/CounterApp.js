@@ -12,12 +12,12 @@ const mapDispatchToProps = (dispatch, ownProps) => {
         // onIncrement: () => {
         //  dispatch({ type: INCREMENT })
         // }, 
+        // onIncrement5: () => {
+        // dispatch({ type: INCREMENT5 })
+        // },
         onIncrement: (value) => {
             dispatch(increment(value))
         }, 
-        // onIncrement5: () => {
-        // dispatch({ type: INCREMENT5 })
-        // }, 
         onDecrement: () => {     
         dispatch({ type: DECREMENT })
         } ,

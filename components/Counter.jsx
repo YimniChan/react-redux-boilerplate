@@ -7,7 +7,6 @@ import React, { Component } from 'react'
     <h1> Value: {value} </h1>
     <button onClick={()=>onIncrement(1)}> +</button>
     <button onClick={()=>onIncrement(5)}>+5 </button>
-   
     <button onClick={onDecrement}> - </button>
     <button onClick={onClear}> Clear </button>
 
