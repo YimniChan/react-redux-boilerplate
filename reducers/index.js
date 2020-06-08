@@ -1,19 +1,19 @@
 // reducers/index.js
-//import { INCREMENT, INCREMENT5, DECREMENT, CLEAR } from '../actions';
-import { INCREMENT, DECREMENT, CLEAR } from '../actions';
+import { INCREMENT, INCREMENTByFIVE, DECREMENT, CLEAR } from '../actions';
+//import { INCREMENT, DECREMENT, CLEAR } from '../actions';
 import {combineReducers} from 'redux';
 
 const initialState = 0;
-//export default (state = initialState, action) => {
-const reducer = (state = initialState, action) => {
+export default (state = initialState, action) => {
+//const reducer = (state = initialState, action) => {
   switch (action.type) {
-    // case INCREMENT:
-    //   return state + 1;
     case INCREMENT:
-      console.log(action.value);
-      return state + action.value;
-    // case INCREMENT5:
-    // return state + 5;
+      return state + 1;
+    // case INCREMENT:
+    //   console.log(action.value);
+    //   return state + action.value;
+    case INCREMENTByFIVE:
+    return state + 5;
     case DECREMENT:
       return state - 1;
     case CLEAR:
@@ -23,4 +23,4 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-export default combineReducers({value: reducer});
+//export default combineReducers({value: reducer});

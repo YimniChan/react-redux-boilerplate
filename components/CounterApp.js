@@ -1,6 +1,6 @@
 import { connect } from 'react-redux' 
-//import { INCREMENT,INCREMENT5, DECREMENT, CLEAR } from '../actions' 
-import { INCREMENT, increment, DECREMENT, CLEAR } from '../actions' 
+import { INCREMENT,INCREMENTByFIVE, DECREMENT, CLEAR } from '../actions' 
+//import { INCREMENT, increment, DECREMENT, CLEAR } from '../actions' 
 import Counter from './Counter'
 
 const mapStateToProps = (state, ownProps) => { 
@@ -9,15 +9,15 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {    
-        // onIncrement: () => {
-        //  dispatch({ type: INCREMENT })
-        // }, 
-        onIncrement: (value) => {
-            dispatch(increment(value))
+        onIncrement: () => {
+         dispatch({ type: INCREMENT })
         }, 
-        // onIncrement5: () => {
-        // dispatch({ type: INCREMENT5 })
+        // onIncrement: (value) => {
+        //     dispatch(increment(value))
         // }, 
+        onIncrementByFive: () => {
+        dispatch({ type: INCREMENTByFIVE })
+        }, 
         onDecrement: () => {     
         dispatch({ type: DECREMENT })
         } ,
